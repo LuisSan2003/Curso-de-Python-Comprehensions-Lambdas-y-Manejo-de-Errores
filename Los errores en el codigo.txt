@@ -1,0 +1,12 @@
+Errores de sintaxis: Errores de escritura. Estos errores detienen el programa y Python ni siquiera ejecuta el codigo porque Python primero lee el codigo de principio a fin, y si hay algun error de escritura Python no corre el programa definitivamente.
+
+Exception: Sí suceden en algun punto del programa que hace que quiebren toda la lógica. Cuando Python lo detecta manda el error en la línea específica, pero el resto de líneas anteriores sí se ejecutarán. 
+
+- KeyboardInterrupt: Cuando pulsamos ctrl + C en la consola. Ahí Python deja de correr el programa y todo se cierra. Python eleva el proceso, es decir, crea un objeto de tipo Exception y lo va moviendo en el programa desde dentro hacia afuera.
+- KeyError: Cuando nosotros intentamos acceder a una llave en un diccionario inexistente. 
+- IndexError: Cuando trabajamos con listas e intentamos acceder a un índice inexistente.
+- FileNotFoundError: Cuando intentamos abrir un archivo inexistente
+- ZeroDivisionError: Cuando intentamos dividir un número entre 0
+- ImportError: Cuando intentamos importar un módulo y hay algún error en el módulo. 
+
+El mensaje de error se denomina Traceback. Se lee desde el final hasta el principio.  
