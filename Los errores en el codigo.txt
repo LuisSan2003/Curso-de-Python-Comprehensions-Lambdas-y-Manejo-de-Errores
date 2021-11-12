@@ -10,3 +10,20 @@ Exception: Sí suceden en algun punto del programa que hace que quiebren toda la
 - ImportError: Cuando intentamos importar un módulo y hay algún error en el módulo. 
 
 El mensaje de error se denomina Traceback. Se lee desde el final hasta el principio.  
+
+
+
+--------------------
+ASSERT STATEMENTS
+
+	asset codicion, mensaje de error
+	[Afirmo que esta condicion es 	verdadera. Si no imprimo este mensaje 		de error]
+
+def palindrome(string):
+	assert len(string) > 0, "No se puede ingresar una cadena vacia"
+	return string == strinng[::-1]
+print(palindrome(""))
+
+.isnumeric()
+	Me bota verdadero si ingresa un numero, y me bota falso si no es un numero
+assert num.isnumeric(), "Debes ingresar un numero"
